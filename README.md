@@ -5,7 +5,7 @@
 
 erDiagram
 direction LR
-user ||--o{ session :has
+user ||--o{ session :has_many
 
 user{
     int id_user PK
