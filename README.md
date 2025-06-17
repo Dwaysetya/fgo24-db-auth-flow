@@ -5,8 +5,7 @@
 
 erDiagram
 direction LR
-user ||--o{ login :own
-user ||--|| register :own
+user ||--o{ session :has
 
 user{
     int id_user PK
@@ -16,16 +15,8 @@ user{
     string password
 }
 
-login{
+session{
     int id_login PK
-    string email
-    string password
-    int id_user FK
-}
-
-register{
-    int id_register PK
-    string name
     string email
     string password
     int id_user FK
