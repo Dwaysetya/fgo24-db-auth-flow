@@ -12,13 +12,14 @@ user{
     string first_name
     string last_name
     string email
-    string password
+    string password_hash
+    string created_at
 }
 
 session{
-    int id_login PK
-    string email
-    string password
+    int id_session PK
+    string session_token
+    string created_at
     int id_user FK
 }
 
