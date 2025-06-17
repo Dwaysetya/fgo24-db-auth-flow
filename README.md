@@ -13,13 +13,13 @@ user{
     string last_name
     string email
     string password_hash
-    string created_at
+    datetime created_at
 }
 
 session{
     int id_session PK
     string session_token
-    string created_at
+    datetime created_at
     int id_user FK
 }
 
