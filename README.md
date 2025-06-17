@@ -9,7 +9,7 @@ user ||--o{ session :has_many
 
 user{
     int id_user PK
-    string firs_name
+    string first_name
     string last_name
     string email
     string password
